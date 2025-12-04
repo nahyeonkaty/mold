@@ -4,7 +4,7 @@ Official PyTorch implementation of the paper "Rethinking the Use of Vision Trans
 
 [![arXiv](https://img.shields.io/badge/arXiv-2409.08248-B31B1B.svg)](https://arxiv.org/abs/)
 
----
+
 <div style="text-align: center;">
   <img src="assets/teaser.png" alt="Alt text">
 </div>
@@ -23,7 +23,7 @@ Different layers capture distinct aspects of the data, each contributing uniquel
 - Demonstrated robustness in real-world scenarios
 - Scalable and versatile approach applicable to other pre-trained ViTs such as DINOv2
 
----
+
 
 ## Requirements
 
@@ -31,7 +31,7 @@ Different layers capture distinct aspects of the data, each contributing uniquel
 - PyTorch 2.5.1
 - CUDA-compatible GPU
 
----
+
 
 ## Installation
 
@@ -48,7 +48,7 @@ For experiment tracking with Weights & Biases:
 pip install wandb
 ```
 
----
+
 
 ## Project Structure
 
@@ -81,7 +81,7 @@ mold/
 └── notebooks/                    # Jupyter notebooks for analysis
 ```
 
----
+
 
 ## Dataset Preparation
 
@@ -106,7 +106,7 @@ data_root/
 
 3. **progan_custom**: For ProGAN-style datasets
 
----
+
 
 ## Training
 
@@ -138,7 +138,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train.py \
 ### Key Training Arguments
 
 | Argument | Default | Description |
-|----------|---------|-------------|
+|-||-|
 | `--arch` | `res50` | Model architecture (e.g., `CLIP:openai/clip-vit-large-patch14`, `DINOv2:LARGE`) |
 | `--batch_size` | 256 | Training batch size |
 | `--niter` | 100 | Number of training epochs |
@@ -149,7 +149,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train.py \
 | `--gm` | `none` | Generative model name for dataset organization |
 | `--expname` | `exp` | Experiment name for saving checkpoints |
 
----
+
 
 ## Evaluation
 
@@ -176,7 +176,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/validate.py \
 ### Key Evaluation Arguments
 
 | Argument | Default | Description |
-|----------|---------|-------------|
+|-||-|
 | `--ckpt` | - | Path to model checkpoint |
 | `--real_path` | None | Path to real images |
 | `--fake_path` | None | Path to fake images |
@@ -186,7 +186,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/validate.py \
 | `--gaussian_sigma` | None | Gaussian blur sigma for robustness testing |
 | `--resize_scale` | None | Resize scale for robustness testing |
 
----
+
 
 ## Supported Architectures
 
@@ -205,7 +205,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/validate.py \
 - `Imagenet:vit_l_16`
 - `Imagenet:vit_l_32`
 
----
+
 
 ## Model Architecture
 
@@ -233,7 +233,7 @@ FC3 (num_layers -> 1) Gating
 Binary Classification Output
 ```
 
----
+
 
 ## Checkpoints
 
@@ -244,7 +244,7 @@ Trained checkpoints are saved in `checkpoints/<expname>/`:
 - `loss.csv`: Training loss log
 - `opt.txt`: Training configuration
 
----
+
 
 ## Robustness Testing
 
@@ -261,13 +261,13 @@ python scripts/validate.py --gaussian_sigma 2 ...
 python scripts/validate.py --resize_scale 0.5 ...
 ```
 
----
+
 
 ## License
 
 This project is released under the license specified in the LICENSE file.
 
----
+
 
 ## Citation
 
@@ -282,7 +282,7 @@ If you find this work useful for your research, please cite our paper:
 }
 ```
 
----
+
 
 ## Acknowledgements
 
@@ -291,7 +291,7 @@ This codebase builds upon the following works:
 - [DINOv2](https://github.com/facebookresearch/dinov2)
 - [CNNDetection](https://github.com/peterwang512/CNNDetection)
 
----
+
 
 ## Contact
 
