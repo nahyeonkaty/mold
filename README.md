@@ -41,15 +41,6 @@ cd mold
 pip install -e .
 ```
 
-### Optional Dependencies
-
-For experiment tracking with Weights & Biases:
-```bash
-pip install wandb
-```
-
-
-
 ## Project Structure
 
 ```
@@ -138,7 +129,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train.py \
 ### Key Training Arguments
 
 | Argument | Default | Description |
-|-||-|
+|----------|---------|-------------|
 | `--arch` | `res50` | Model architecture (e.g., `CLIP:openai/clip-vit-large-patch14`, `DINOv2:LARGE`) |
 | `--batch_size` | 256 | Training batch size |
 | `--niter` | 100 | Number of training epochs |
@@ -176,7 +167,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/validate.py \
 ### Key Evaluation Arguments
 
 | Argument | Default | Description |
-|-||-|
+|----------|---------|-------------|
 | `--ckpt` | - | Path to model checkpoint |
 | `--real_path` | None | Path to real images |
 | `--fake_path` | None | Path to fake images |
@@ -282,8 +273,6 @@ If you find this work useful for your research, please cite our paper:
 }
 ```
 
-
-
 ## Acknowledgements
 
 This codebase builds upon the following works:
@@ -291,10 +280,3 @@ This codebase builds upon the following works:
 - [DINOv2](https://github.com/facebookresearch/dinov2)
 - [CNNDetection](https://github.com/peterwang512/CNNDetection)
 
-
-
-## Contact
-
-For questions or issues, please open an issue on GitHub or contact:
-- NaHyeon Park: julia19@kaist.ac.kr
-- Kunhee Kim: kunhee.kim@kaist.ac.kr
