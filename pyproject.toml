@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mold"
+version = "0.1.0"
+dependencies = [
+  "torch==2.5.1",
+  "torchvision==0.20.1",
+  "scikit-learn",
+  "ftfy",
+  "opencv-python-headless",
+  "regex",
+  "tensorboard",
+  "transformers==4.52.4",
+  "tqdm",
+]
+requires-python = ">=3.9, <3.13"
+authors = [
+  {name = "NaHyeon Park", email = "julia19@kaist.ac.kr"},
+  {name = "Kunhee Kim", email = "kunhee.kim@kaist.ac.kr"},
+]
+description = "MoLD"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://mold.github.io"
+Repository = "https://github.com/nahyeonkaty/mold.git"
+
+[tool.setuptools]
+packages = ["mold"]
