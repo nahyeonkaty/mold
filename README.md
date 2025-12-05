@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of the paper "Rethinking the Use of Vision Transformers for AI-Generated Image Detection".
 
-[![arXiv](https://img.shields.io/badge/arXiv-2409.08248-B31B1B.svg)](https://arxiv.org/abs/)
+[![arXiv](https://img.shields.io/badge/arXiv-2409.08248-B31B1B.svg)](https://arxiv.org/abs/2512.04969)
 
 
 <div style="text-align: center;">
@@ -269,7 +269,8 @@ If you find this work useful for your research, please cite our paper:
   title={Rethinking the Use of Vision Transformers for AI-Generated Image Detection},
   author={Park, NaHyeon and Kim, Kunhee and Choe, Junseok and Shim, Hyunjung},
   journal={arXiv preprint},
-  year={2025}
+  year={2025},
+  eprint={arXiv:2512.04969}
 }
 ```
 
